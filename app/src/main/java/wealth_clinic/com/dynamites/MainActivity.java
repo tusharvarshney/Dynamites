@@ -10,10 +10,11 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
-
-    Button button,docButton,driveButton;
+    //tushar
+    View mail,crm,inventory;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,29 +24,29 @@ public class MainActivity extends Activity {
         ActionBar bar = getActionBar();
         bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#000000")));
 
-        button = findViewById(R.id.button);
-        docButton = findViewById(R.id.docs_button);
-        driveButton = findViewById(R.id.button3);
+        mail = findViewById(R.id.mail);
+        crm = findViewById(R.id.crm);
+        inventory = findViewById(R.id.inventory);
 
-        button.setOnClickListener(new View.OnClickListener() {
+        mail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                launchPackage("com.zoho.crm");
+                launchPackage("com.zoho.mail&hl=en_IN");
             }
         });
 
-        docButton.setOnClickListener(new View.OnClickListener() {
+        crm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                launchPackage("com.google.android.apps.docs.editors.sheets");
+                launchPackage("com.zoho.crm&hl=en_IN");
             }
         });
 
-        driveButton.setOnClickListener(new View.OnClickListener() {
+        inventory.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                launchPackage("com.google.android.apps.docs");
-            }
+                Toast.makeText(getApplicationContext(), "Coming Soon!",
+                        Toast.LENGTH_LONG).show();            }
         });
     }
 
