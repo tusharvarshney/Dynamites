@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="wealth_clinic.com.dynamites">
+    package="wealth_clinic.com.dynamites"
+    android:versionCode="1">
 
     <application
         android:allowBackup="true"
@@ -8,6 +9,7 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/wealth_clinic"
         android:supportsRtl="true"
+        android:screenOrientation="portrait"
         android:hardwareAccelerated="false"
         android:largeHeap="true"
         android:theme="@style/AppTheme">
