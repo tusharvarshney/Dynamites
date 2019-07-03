@@ -1,17 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<RelativeLayout android:layout_height="wrap_content"
-    android:layout_width="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <android.support.design.widget.FloatingActionButton
-        android:layout_width="72dp"
-        android:layout_height="72dp"
-        android:layout_gravity="bottom"
-        android:layout_margin="16dp"
-        android:clickable="true"
-        android:src="@drawable/chat_icon" />
-
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -23,6 +10,8 @@
     android:background="#F1FAF9"
     android:gravity="center"
     android:id="@+id/ll">
+
+
 
     <android.support.v7.widget.CardView
         android:clickable="true"
@@ -192,20 +181,19 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:gravity="center"
-        android:orientation="horizontal"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="210dp"
+        android:gravity="center"
+        android:orientation="vertical">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/bg_inventory1"
-            android:padding="10dp"/>
+            android:padding="10dp"
+            android:src="@drawable/bg_inventory1" />
 
-    </LinearLayout>
+    </RelativeLayout>
+
 </LinearLayout>
-
-</RelativeLayout>
 
